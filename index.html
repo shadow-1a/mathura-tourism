@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Mathura - The Soul of Braj</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(2, 21, 53, 0.85), rgba(2, 21, 53, 0.95)), 
+                        url('https://unsplash.com') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #ff9933;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #021535;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #ff9933;
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Grid Configuration for 12 Attractions */
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .place-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .place-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Visual placeholder representing each destination */
+        .place-image {
+            height: 180px;
+            background-color: #021535;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff9933;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 4px solid #ff9933;
+        }
+
+        .place-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .place-info h3 {
+            color: #021535;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .place-info p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* The dynamic navigation links pointing to subpages */
+        .explore-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #021535;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .explore-btn:hover {
+            background-color: #ff9933;
+        }
+
+        footer {
+            background-color: #021535;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore Mathura</h1>
+        <p>Journey through the Birthplace of Lord Krishna & Eternal Heritage</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Top Iconic Attractions</h2>
+        
+        <div class="places-grid">
+            
+            <!-- Place 1 -->
+            <div class="place-card">
+                <div class="place-image" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://unsplash.com') center/cover;">✨ Sacred Birthplace</div>
+                <div class="place-info">
+                    <h3>Shri Krishna Janmabhoomi</h3>
+                    <p>The holiest core of Mathura, built around the prison cell where Lord Krishna was born.</p>
+                    <a href="janmabhoomi.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 2 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🏛️ Architectural Marvel</div>
+                <div class="place-info">
+                    <h3>Dwarkadhish Temple</h3>
+                    <p>Famous for its beautiful Maratha-styled art, intricate carvings, and lively festive celebrations.</p>
+                    <a href="dwarkadhish.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 3 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🌊 Sacred River Bank</div>
+                <div class="place-info">
+                    <h3>Vishram Ghat</h3>
+                    <p>The prominent central ghat along the Yamuna where Lord Krishna rested after defeating Kansa.</p>
+                    <a href="vishram-ghat.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 4 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🪨 Sacred Hillside</div>
+                <div class="place-info">
+                    <h3>Govardhan Hill</h3>
+                    <p>The legendary hill lifted by young Krishna on his finger to protect villagers from torrential rain storms.</p>
+                    <a href="govardhan.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 5 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🕌 Historic Monument</div>
+                <div class="place-info">
+                    <h3>Kansa Qila</h3>
+                    <p>An ancient fort representing a blend of Hindu and Islamic architecture right by the river banks.</p>
+                    <a href="kansa-qila.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 6 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">📜 Royal Lake Oasis</div>
+                <div class="place-info">
+                    <h3>Kusum Sarovar</h3>
+                    <p>A stunning, peaceful sandstone reservoir flanked by exquisite historic architectural canopies.</p>
+                    <a href="kusum-sarovar.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 7 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🎨 Heritage Gallery</div>
+                <div class="place-info">
+                    <h3>Government Museum</h3>
+                    <p>Houses world-famous ancient sculptures, terracotta models, and coins from the Kushan era.</p>
+                    <a href="museum.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 8 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🦢 Childhood Village</div>
+                <div class="place-info">
+                    <h3>Gokul Dham</h3>
+                    <p>The rustic, peaceful neighborhood where Lord Krishna spent his playful early childhood years.</p>
+                    <a href="gokul.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 9 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🛕 Radiant White Stone</div>
+                <div class="place-info">
+                    <h3>Prem Mandir</h3>
+                    <p>Located on the outskirts, this grand marble temple illuminates with colourful light shows at night.</p>
+                    <a href="prem-mandir.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 10 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🌳 Mystical Forest</div>
+                <div class="place-info">
+                    <h3>Nidhivan</h3>
+                    <p>A mysterious grove where trees intertwine, believed to host celestial dances every single night.</p>
+                    <a href="nidhivan.html" class="explore-btn">Explore Temple Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Place 11 -->
+            <div class="place-card">
+                <div class="place-image" style="background: #021535; color: #ff9933;">🦚 Devotional Core</div>
+                <div class="place-info">
+                    <h3>Banke Bihari Temple</h3>
